@@ -1,0 +1,576 @@
+/*------------------------
+Table of Content:
+1/ Header;
+2/ Product & ADS;
+3/ Window from 990px to 1200px;
+4/ Window >= 1200px;
+5/ Window from 768px to 990px;
+6/ Window from 579px to 768px;
+7/ Window <= 578px;
+8/ Blog;
+9/ Footer;
+--------------------------*/
+
+/* Header Area css
+============================================================================================
+*/
+.main-menu li {
+	margin:0 29px 0 29px;
+	display: inline-block;
+	font-family: 'montserrat';
+}
+
+.main-menu li a {
+	text-decoration: none;
+	color: #222;
+	size: 14pt;
+}
+
+.main-menu li a:hover{
+	color: #8262b5;
+}
+
+.menu-right li {
+	margin: 0px 15px 0px 15px;
+}
+
+.navbar-default {
+	border-bottom: 1px solid #8262b5;
+	font-family: 'montserrat';
+	font-weight: bold;
+}
+
+.far, .fas {
+	color: #282828;
+}
+
+.navbar ul{
+	margin-top: 16px;
+}
+
+.navbar-brand img{
+	margin: 30px 0px 19px 30px;
+}
+
+/* End Header Area css
+============================================================================================
+*/
+
+/* Product & ADS Area css
+============================================================================================
+*/
+.main_title {
+	max-width: 1140px;
+    margin: 78px auto 45px;
+}
+
+.latest_product_inner {
+    margin-bottom: -35px;
+}
+
+.ads{
+	margin-top: 31px;
+}
+
+.ads1{
+	margin-right: 10px;
+	position: relative;
+}
+
+.ads2{
+	margin-left: 5px;
+}
+
+.ads3{
+	position: relative;
+	margin: 30px 0px 0px 5px;
+}
+
+.ads1 button{
+	position: absolute;
+	z-index: 1;
+}
+
+.ads1 img{
+	width: 100%;
+	height: 100%;
+}
+
+.ads3-btn button{
+	position: absolute;
+	z-index: 1;
+}
+
+.main_title{
+	font-family: 'montserrat';
+}
+
+.main_title p{
+	color: #8262b5;
+	size: 12pt;
+}
+
+.main_title h2{
+	font-weight: bold;
+	font-size: 24pt;
+	font-family: 'montserrat';
+}
+
+.f_p_item .f_p_img {
+  position: relative;
+  overflow: hidden;
+}
+
+.div-img{
+	width: 263px;
+	height: 323px;
+	height: 100%
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.name-product {
+	font-family: 'montserrat';
+	color: #000;
+}
+.name-product p{
+	padding-top: 15px;
+	font-size: 14pt;
+	font-weight: bold;
+}
+.p_icon {
+  position: absolute;
+  width: 118px;
+  height: 40px;
+  background-color: #fff;
+  left: 5px;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.p_icon a{
+	text-decoration: none;
+	color: #282828;
+}
+.p_icon a:hover{
+	color: #967dc0;
+	text-decoration: none;
+}
+
+.fa-star{
+	color: yellow;
+}
+.noactive{
+	color: #d7d7d7;
+}
+
+.p-review{
+	margin: 10px 0px 10px 0px;
+}
+
+.price-normal{
+	float: left;
+	text-decoration: line-through;
+	font-family: 'opensans';
+	font-size: 12pt;
+}
+
+.price-sales{
+	float: left;
+	font-family: 'opensans';
+	font-weight: bold;
+	color: #967dc0;
+	font-size: 12pt;
+	margin: 0px 0px 30px 5px;	
+}
+/* End Product & ADS Area css
+============================================================================================
+*/
+
+/* Window from 990px to 1200px Area css
+============================================================================================
+*/
+@media  all and (min-width: 990px)  and (max-width: 1200px){
+	.ads-r-2{
+		display: block;
+	}
+	.ads2 img {
+		width: 300px;
+		height: 166px;
+	}
+	.ads3 img{
+		width: 300px;
+		height: 281px;
+	}
+
+	.ads1 button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 105px;
+		height: 40px;
+		margin: 50% 12.5% 27.5% 70%;
+	}
+	.ads3-btn button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 108px;
+		height: 40px;
+		margin: 179px 0px 0px 40px;
+	}
+}
+/* Window >= 1200px Area css
+============================================================================================
+*/
+@media all and (min-width: 1200px) {
+	.ads-r-2{
+		display: block;
+	}
+	.ads2 {
+		height: 200px;
+	}
+	.ads3{
+		height: 330px;
+	}
+	.ads1 button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 105px;
+		height: 40px;
+		margin: 50% 12.5% 27.5% 550px;
+	}
+	.ads3-btn button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 108px;
+		height: 40px;
+		margin: 179px 0px 0px 40px;
+	}
+	.products{
+		margin-top: 79px;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.main_title{
+		margin-bottom: 50px;
+	}
+	.shop-local{
+		float: right;
+	}
+}
+/* Window from 768px to 990px Area css
+============================================================================================
+*/
+@media  all and (min-width: 768px)  and (max-width: 990px){
+	.ads-r-2{
+		display: flex;
+	}
+	.ads2{
+		margin-left: 0;
+		padding: 0 !important;
+	}
+	.ads2 img {
+		flex: 1;
+		margin-top: 30px;
+		height: 170px;
+	}
+	.ads3{
+		padding: 0 !important;
+	}
+	.ads3-img img{
+		width: 90%;
+		padding: 0 !important;
+		flex: 1;
+		height: 170px;
+	}
+	.ads1 button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 105px;
+		height: 40px;
+		margin: 50% 12.5% 27.5% 70%;
+	}
+	.ads3-btn button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 108px;
+		height: 40px;
+		margin: 100px 0px 0px 30px;
+	}
+
+	.shop-local{
+		float: right;
+	}
+
+}
+/* Window from 579px to 768px Area css
+============================================================================================
+*/
+@media all and (min-width: 579px)  and (max-width: 768px){
+	.ads-r-2{
+		display: flex;
+	}
+	.ads2{
+		margin-left: 0;
+		padding: 0 !important;
+	}
+	.ads2 img {
+		margin-top: 30px;
+		flex: 1;
+		width: 100%;
+		height: 170px;
+	}
+	.ads3{
+		padding: 0 !important;
+	}
+	.ads3-img img{
+		width: 90%;
+		padding: 0 !important;
+		flex: 1;
+		height: 170px;
+	}
+	.ads1 button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 105px;
+		height: 40px;
+		margin: 50% 12.5% 27.5% 70%;
+	}
+	.ads3-btn button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 98px;
+		height: 40px;
+		margin: 100px 0px 0px 20px;
+	}
+}
+/* Window <= 578px Area css
+============================================================================================
+*/
+@media all and (max-width: 578px) {
+	.ads1 button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 105px;
+		height: 40px;
+		margin: 50% 12.5% 27.5% 50%;
+	}
+
+	.ads-r-2 {
+		margin-top: 30px;
+	}
+	
+	.ads2{
+		padding-left: 0 !important;
+	}
+
+	.ads3{
+		padding-left: 0 !important;
+	}
+
+	.ads2 img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.ads3-img img{
+		width: 100%;
+		height: 100%;
+	}
+	.ads3-btn button{
+		background-color: #8262b5;
+		color: #fff;
+		width: 108px;
+		height: 40px;
+		margin: 50% 0px 0px 40px;
+	}
+}
+
+/* Blogs Area css
+============================================================================================
+*/
+.title-blog{
+	position: relative;
+	text-align: center;
+	padding-top: 45px;
+	font-family: 'montserrat';
+}
+
+.title-blog p{
+	font-weight: bold;
+	color: #967dc0;
+	font-size: 12pt;
+}
+
+.blog{
+	margin-top: 50px;
+}
+
+.bg_blog_img{
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	opacity: 0.5;
+}
+
+.post-slide8{
+	margin:0 15px;
+	position:relative;
+	background:#fff;
+	box-shadow:0 1px 2px rgba(43,59,93,.3);
+	margin-bottom:2em
+}
+.post-slide8 .post-img{position:relative;overflow:hidden;}
+.post-slide8 .post-img img{width:100%;height:auto;}
+
+.post-slide8 .over-layer{
+	position:absolute;
+	top:0;left:0;width:100%;
+	height:100%;opacity:0;
+	background:rgba(0,0,0,.6);
+	transition:all .3s ease}
+
+.post-slide8:hover .over-layer{opacity:1}
+
+.post-slide8 .post-link{
+	margin:0;padding:0;
+	position:relative;
+	top:45%;text-align:center}
+
+.post-slide8 .post-link li{
+	display:inline-block;
+	list-style:none;margin-right:20px}
+
+.post-slide8 .post-link li a{
+	color:#fff;
+	font-size:20px}
+
+.post-slide8 .post-link li a:hover{color:#ff8b3d;text-decoration:none}
+
+.post-slide8 .post-date{
+	position:absolute;
+	top:10%;left:4%;
+	background: #a1d1dd;
+}
+
+.post-slide8 .border-post-date{
+	margin: 5px 5px 5px 5px;
+	width: 60px;
+	height: 60px;
+	border:2px solid #fff;
+}
+
+.post-slide8 .month{
+	width: 100%;
+	display:inline-block;
+	padding:0px 5px 0px 5px;
+	color:#fff;
+	font-size:15px;
+	font-weight:200;
+	text-align:center;
+	float:left
+}
+
+.post-slide8 .date{
+	width: 100%;
+	padding:0px 0px 10px 0px;
+	display:inline-block;
+	color:#fff;
+	font-size:15px;
+	font-weight:700;
+	text-align: center;
+}
+
+.post-slide8 .post-content{padding:30px}
+/*title post blog*/
+.post-slide8 .post-title{margin:0 0 15px 0; font-family: 'montserrat'}
+.post-slide8 .post-title a{
+	font-size:12pt;
+	font-weight:600;
+	color:#333;
+	display:inline-block;
+	text-transform:capitalize;
+	transition:all .3s ease 0s}
+.post-slide8 .post-title a:hover{
+	text-decoration:none;
+	color:#967dc0}
+
+.post-slide8 .post-description{
+	font-size:14pt;
+	line-height:24px;
+	color:grey;
+	font-family: 'opensans';
+}
+
+
+@media only screen and (max-width:479px){.post-slide8 .month{font-size:14px}
+.post-slide8 .date{font-size:14px}
+}
+
+/* End Blogs Area css
+============================================================================================
+*/
+/* Footer Area css
+============================================================================================
+*/
+.footer {
+	position: absolute;
+	max-height: 100%;
+	background-color: black;
+}
+
+.footer-title{
+	margin-top: 50px;
+	font-family: 'montserrat';
+	font-weight: 'regular';
+}
+
+.footer-title h3{
+	font-size: 16pt;
+	color: #fff;
+}
+
+.footer-content{
+	color: #7e7e7e;
+}
+
+.footer-content ul li a{
+	color: #7e7e7e;
+}
+
+.footer-content ul li a:hover{
+	color: #fff;
+}
+
+.ft-c-1{
+	float: left;
+}
+
+.ft-c-2{
+	float: left;
+}
+
+.ft-c-1 ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.ft-c-2 ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+
+.abs i{
+	margin: 0px 30px 0px 0px;
+}
+
+/* End Footer Area css
+============================================================================================
+*/
