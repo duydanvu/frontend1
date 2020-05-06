@@ -13,7 +13,13 @@
     <script src="assets/vendors/jquery.min.js"></script>
     <script src="assets/owlcarousel/owl.carousel.js"></script>
 
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/
+	jquery/3.4.1/jquery.min.js"></script> -->
 
 	<link rel = "stylesheet" href = "assets/css/style.css"/>
 	<!-- Latest compiled and minified CSS -->
@@ -21,23 +27,37 @@
 	
 </head>
 <body>
-	<!--================Header Menu Area =================-->
-	<header >
 		<nav class="navbar navbar-default d-flex justify-content-between p-0">
 			<a class="navbar-brand p-0" href="#"><img src="../project/assets/images/images/01_logo_1_03.jpg"></a>
-			<ul class="main-menu navbar nav">
-				<li><a href = "#">HOME</a></li>
-				<li><a href = "#">WOMEN</a></li>
-				<li><a href = "#">MEN</a></li>
-				<li><a href = "#">ABOUT US</a></li>
-				<li><a href = "#">BLOG</a></li>
-				<li><a href = "#">COLLECTIONS</a></li>
-				<li><a href = "#">CONTACT</a></li>
-				<li><a href = "#"><i class="fas fa-search"></i></a></li>
-			</ul>
+			<div id ="main-menu">
+				<ul class="main-menu navbar nav">
+					<li><a href = "#">HOME</a></li>
+					<li><a href = "#">WOMEN</a></li>
+					<li><a href = "#">MEN</a></li>
+					<li><a href = "#">ABOUT US</a></li>
+					<li><a href = "#">BLOG</a></li>
+					<li><a href = "#">COLLECTIONS</a></li>
+					<li><a href = "#">CONTACT</a></li>
+					<li><a href = "#"><i class="fas fa-search"></i></a></li>
+				</ul>
+			</div>
 			<ul class="menu-right navbar nav">
 				<li><a href="#"><i class="far fa-heart"></i></a></li>
-				 <li><a href="#"><i class="fas fa-shopping-cart"></i></i></a></li>
+				 <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+				 <li>
+				 	<div class="dropdown" id="bars">
+					  <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+					  <div id="myDropdown" class="dropdown-content">
+					    <a href = "#">HOME</a>
+						<a href = "#">WOMEN</a>
+						<a href = "#">MEN</a>
+						<a href = "#">ABOUT US</a>
+						<a href = "#">BLOG</a>
+						<a href = "#">COLLECTIONS</a>
+						<a href = "#">CONTACT</a>
+					  </div>
+					</div>
+				 </li>
 			</ul>
 		</nav>
 	</header>
@@ -48,19 +68,33 @@
 			<!--================ Ads Area =================-->
 			<div class="ads row" >
 				<div class = "p-0 col-lg-8 col-md-12 ">
-
 					<div class="ads1" >
+						<div class="ads1-title">
+						<span>Two High-end Materials</span>
+						</div>
 						<button >Shop Now</button>
-						<img src="../project/assets/images/ads11.png" />
+						<img src="../project/assets/images/left.jpg" />
 					</div>
 				</div>
 				<div class="ads-r-2 p-0 col-lg-4 col-md-12 ">
-					<div class = "ads2 col-md-6 ">
-						<img src="../project/assets/images/ads2.png"/>
+					<div class = "ads2 col-lg-8 col-md-6 ">
+						<div class="ads2-right-text">
+							<span>SMALL THING</span>
+						</div>
+						<div class="ads2-right-title">
+							<span>MAKE DIFFERENT</span>
+						</div>
+						<img src="../project/assets/images/top-right.jpg"/>
 					</div>
-					<div class = "ads3 col-md-6 ">
+					<div class = "ads3 col-lg-8 col-md-6 ">
+						<div class="ads3-right-text">
+							<span>FOLIO</span>
+						</div>
+						<div class="ads3-right-title">
+							<span>BACKPACK</span>
+						</div>
 						<div class="ads3-btn"><button>Shop Now</button></div>
-						<div class="ads3-img" ><img src="../project/assets/images/ads3.png"/></div>
+						<div class="ads3-img" ><img src="../project/assets/images/bottom-right.jpg"/></div>
 					</div>
 				</div>
 			</div>
@@ -507,6 +541,27 @@
 		        }
 		      });
 	</script>
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+		</script>
 	</section>
 	<section>
 		

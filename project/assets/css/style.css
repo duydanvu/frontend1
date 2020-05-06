@@ -14,16 +14,16 @@ Table of Content:
 /* Header Area css
 ============================================================================================
 */
+
 .main-menu li {
-	margin:0 29px 0 29px;
-	display: inline-block;
+	margin:0 20px 0 20px;
+	display: flex;
 	font-family: 'montserrat';
 }
-
 .main-menu li a {
 	text-decoration: none;
 	color: #222;
-	size: 14pt;
+	font-size: 14px;
 }
 
 .main-menu li a:hover{
@@ -45,16 +45,60 @@ Table of Content:
 }
 
 .navbar ul{
-	margin-top: 16px;
+	padding: 35px 20px 35px 20px;
 }
 
 .navbar-brand img{
 	margin: 30px 0px 19px 30px;
 }
 
+/*.menu-right #bars{
+	display: none;
+}*/
+
 /* End Header Area css
 ============================================================================================
 */
+
+.dropbtn {
+  background-color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: white;
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
 
 /* Product & ADS Area css
 ============================================================================================
@@ -86,6 +130,19 @@ Table of Content:
 	margin: 30px 0px 0px 5px;
 }
 
+.ads1-title{
+	position: absolute;
+	top: 60%;
+	left: 45%;
+}
+
+.ads1-title span{
+	float: right;
+    font-family: 'Pacifico';
+    font-weight: 400;
+    font-size: 30px;
+}
+
 .ads1 button{
 	position: absolute;
 	z-index: 1;
@@ -96,9 +153,56 @@ Table of Content:
 	height: 100%;
 }
 
+.ads2-right-text{
+	position: absolute;
+	padding: 88px 0px 0px 50px;
+}
+
+.ads2-right-text span{
+	font-size: 16px;
+	font-family: 'Montserrat';
+	font-weight: 450;
+	letter-spacing: 3px;
+
+}
+
+.ads2-right-title{
+	position: absolute;
+	padding: 110px 0px 76px 50px;
+}
+
+.ads2-right-title span{
+	font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
 .ads3-btn button{
 	position: absolute;
 	z-index: 1;
+}
+
+.ads3-right-text{
+	position: absolute;
+	padding: 110px 0 80px 50px;
+}
+
+.ads3-right-text span{
+	font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 450;
+    letter-spacing: 3px;
+}
+
+.ads3-right-title{
+	position: absolute;
+	padding: 130px 0 80px 50px;
+}
+
+.ads3-right-title span{
+	font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold
 }
 
 .main_title{
@@ -107,12 +211,12 @@ Table of Content:
 
 .main_title p{
 	color: #8262b5;
-	size: 12pt;
+	size: 12px;
 }
 
 .main_title h2{
 	font-weight: bold;
-	font-size: 24pt;
+	font-size: 24px;
 	font-family: 'montserrat';
 }
 
@@ -137,7 +241,7 @@ Table of Content:
 }
 .name-product p{
 	padding-top: 15px;
-	font-size: 14pt;
+	font-size: 14px;
 	font-weight: bold;
 }
 .p_icon {
@@ -179,7 +283,7 @@ Table of Content:
 	float: left;
 	text-decoration: line-through;
 	font-family: 'opensans';
-	font-size: 12pt;
+	font-size: 12px;
 }
 
 .price-sales{
@@ -187,7 +291,7 @@ Table of Content:
 	font-family: 'opensans';
 	font-weight: bold;
 	color: #967dc0;
-	font-size: 12pt;
+	font-size: 12px;
 	margin: 0px 0px 30px 5px;	
 }
 /* End Product & ADS Area css
@@ -197,13 +301,25 @@ Table of Content:
 /* Window from 990px to 1200px Area css
 ============================================================================================
 */
-@media  all and (min-width: 990px)  and (max-width: 1200px){
+@media  all and (min-width: 990px)  and (max-width: 1220px){
+	#main-menu{
+		display: none;
+	}
+	.ads1-title span{
+		font-size: 25px;
+	}
 	.ads-r-2{
 		display: block;
 	}
 	.ads2 img {
 		width: 300px;
 		height: 166px;
+	}
+	.ads2-right-text span{
+		font-size: 13px;
+	}
+	.ads2-right-title span{
+		font-size: 15px;
 	}
 	.ads3 img{
 		width: 300px;
@@ -228,7 +344,10 @@ Table of Content:
 /* Window >= 1200px Area css
 ============================================================================================
 */
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1220px) {
+	#bars{
+		display: none;
+	}
 	.ads-r-2{
 		display: block;
 	}
@@ -268,6 +387,9 @@ Table of Content:
 ============================================================================================
 */
 @media  all and (min-width: 768px)  and (max-width: 990px){
+	#main-menu{
+		display: none;
+	}
 	.ads-r-2{
 		display: flex;
 	}
@@ -289,6 +411,13 @@ Table of Content:
 		flex: 1;
 		height: 170px;
 	}
+	.ads3-right-text {
+		padding: 50px 0 80px 30px;
+	}
+	.ads3-right-title {
+		padding: 70px 0 80px 30px;
+	}
+
 	.ads1 button{
 		background-color: #8262b5;
 		color: #fff;
@@ -313,6 +442,12 @@ Table of Content:
 ============================================================================================
 */
 @media all and (min-width: 579px)  and (max-width: 768px){
+	#main-menu{
+		display: none;
+	}
+	.ads1-title span{
+		font-size: 20px;
+	}
 	.ads-r-2{
 		display: flex;
 	}
@@ -325,6 +460,12 @@ Table of Content:
 		flex: 1;
 		width: 100%;
 		height: 170px;
+	}
+	.ads3-right-text {
+		padding: 50px 0 80px 30px;
+	}
+	.ads3-right-title {
+		padding: 70px 0 80px 30px;
 	}
 	.ads3{
 		padding: 0 !important;
@@ -354,6 +495,12 @@ Table of Content:
 ============================================================================================
 */
 @media all and (max-width: 578px) {
+	#main-menu{
+		display: none;
+	}
+	.ads1-title span{
+		font-size: 20px;
+	}
 	.ads1 button{
 		background-color: #8262b5;
 		color: #fff;
@@ -405,7 +552,7 @@ Table of Content:
 .title-blog p{
 	font-weight: bold;
 	color: #967dc0;
-	font-size: 12pt;
+	font-size: 12px;
 }
 
 .blog{
@@ -491,7 +638,7 @@ Table of Content:
 /*title post blog*/
 .post-slide8 .post-title{margin:0 0 15px 0; font-family: 'montserrat'}
 .post-slide8 .post-title a{
-	font-size:12pt;
+	font-size:12px;
 	font-weight:600;
 	color:#333;
 	display:inline-block;
@@ -502,7 +649,7 @@ Table of Content:
 	color:#967dc0}
 
 .post-slide8 .post-description{
-	font-size:14pt;
+	font-size:14px;
 	line-height:24px;
 	color:grey;
 	font-family: 'opensans';
@@ -532,7 +679,7 @@ Table of Content:
 }
 
 .footer-title h3{
-	font-size: 16pt;
+	font-size: 16px;
 	color: #fff;
 }
 
